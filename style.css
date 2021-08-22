@@ -32,7 +32,7 @@ br{
     top: 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
-
+/* nav pc */
 .nav{
     display: flex;
     padding: 8px 16px;
@@ -43,6 +43,10 @@ br{
     color: #000;
     text-decoration: none;
     letter-spacing: 4px;
+}
+
+.heading-nav{
+    margin: auto 0;
 }
 
 .heading-nav,
@@ -59,6 +63,100 @@ br{
 .content-nav-item a:hover{
     background-color: #ccc;
     cursor: pointer;
+}
+
+/* nav mobile */
+.nav-menu{
+    margin-right: 16px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: none;
+}
+
+.nav-menu .ti-menu{
+    font-size: 25px;
+    line-height: 54px;
+    padding: 8px;
+}
+
+.nav-menu .ti-menu:hover{
+    background-color: #ccc;
+}
+
+.nav-close{
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    margin: 10px;
+}
+
+.nav-close .ti-close{
+    font-size: 30px;
+}
+
+.nav-close:hover{
+    background: #ccc;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    transition: fadeIn linear 0.2s;
+}
+
+.nav-mobile{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    opacity: 0;
+    padding: 58px 0;
+    position: fixed;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: transform linear 0.2s;
+}
+
+.content-nav-mobile li{
+    list-style: none;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.content-nav-mobile li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.content-nav-mobile li:hover a{
+    background: #ccc;
+    display: block;
+}
+
+.nav-input:checked ~ .nav-mobile{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.nav-input:checked ~ .overlay{
+    display: block;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 /* Slider */
@@ -150,6 +248,7 @@ br{
 
 .our-menu-item{
     padding: 12px 24px;
+    flex-basis: 50%;
 }
 
 .heading-our-menu{

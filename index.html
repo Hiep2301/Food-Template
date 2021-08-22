@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Template</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
   </head>
   <body>
     <div id="main">
       <div id="header">
+        <!-- nav pc -->
         <div class="nav">
           <div class="heading-nav">
             <a href="#">Gourmet au Catering</a>
@@ -23,6 +26,26 @@
             </div>
           </div>
         </div>
+
+        <!-- nav mobile -->
+        <input type="checkbox" hidden name="" id="nav-mobile-input" class="nav-input">
+        
+        <label for="nav-mobile-input" class="overlay"></label>
+
+        <label for="nav-mobile-input" class="nav-menu">
+          <i class="ti-menu"></i>
+        </label>
+
+      <div class="nav-mobile">
+        <ul class="content-nav-mobile">
+          <li><a href="#about">About</a></li>
+          <li><a href="#our-menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <label for="nav-mobile-input" class="nav-close">
+          <i class="ti-close"></i>
+        </label>
+      </div>
       </div>
 
       <div id="slider">
