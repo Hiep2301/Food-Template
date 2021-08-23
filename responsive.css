@@ -13,6 +13,14 @@
         display: block;
     }
 
+    .content-slider{
+        padding: 0 24px;
+    }
+
+    .text-slider{
+        margin: 5px 0;
+    }
+
     /* content */
     .about-cateting,
     .our-menu-container{
